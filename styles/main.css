@@ -1,0 +1,179 @@
+
+/* CSS RESETS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+body {
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: #77bfa1;
+}
+
+
+/* ROOT */
+
+:root {
+
+    /* COLORS */
+    --white: #fff;
+    --black: #000;
+    --transparent: #ffffff00;
+
+
+
+    /* FONT SIZES */
+    --font-size-s: 0.875rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.125rem;
+    --font-size-l: 2.25rem;
+    --font-size-xl: 3.635rem;
+    --font-size-xxl: 4.24rem;
+  
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+ 
+    /* BORDER RADIUS */
+    --border-radius-s: 8px;
+    --border-radius-m: 20px;
+    --border-radius-l: 32px;
+    --border-radius-circle: 50%;
+
+    /* SITE MAX WIDTH */
+    --site-max-width: 1240px;
+    
+}
+
+/* GENERAL CSS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    margin: auto;
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    margin-top: 20vh;
+    border: none;
+    outline: none;
+    background: var(--transparent);
+    color: white;
+    border: 2px solid var(--white);
+    padding: 10px 50px;
+}
+
+
+#content {
+    margin: auto;
+    padding: 4vh;
+    font-size: var(--font-size-m);
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+/* IMAGES */
+
+img {
+    width: 100%;
+}
+
+
+
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* RESPONSIVE */
+
+/* (DESKTOP)RESPONSIVE ABOVE 1024PX  */
+
+@media screen and (min-width: 1024px) {
+
+
+}
+
+/* (TABLET) RESPONSIVE BETWEEN 769 - 1023PX */
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+
+}
+
+
+       
+/* (MOBILE) RESPONSIVE BELOW FOR MAX WIDTH 768PX */
+
+@media screen and (max-width: 768px) {
+
+
+
+}
+
+    
+
+
+
+
