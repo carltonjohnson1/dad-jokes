@@ -1,6 +1,6 @@
 # Dad Jokes
 
-![screenshot to come](images/preview-screenshot.jpg)
+![screenshot to come](images/preview.jpg)
 
 ## Content
 
