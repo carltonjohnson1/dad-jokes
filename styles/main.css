@@ -42,10 +42,6 @@ q:before, q:after {
 	content: none;
 }
 
-body {
-     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     background: #77bfa1;
-}
 
 
 /* ROOT */
@@ -86,6 +82,12 @@ body {
 
 /* GENERAL CSS */
 
+
+body {
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -94,7 +96,18 @@ h1 {
     margin: auto;
     font-size: var(--font-size-xxl);
     font-weight: var(--font-weight-semibold);
+    z-index: 10;
 }
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    color: #fff;
+    padding: 10px;
+}
+
+
 
 .container {
     display: flex;
@@ -104,22 +117,41 @@ h1 {
 }
 
 #btn {
-    margin-top: 20vh;
+    margin-top: 40px;
     border: none;
     outline: none;
-    background: var(--transparent);
-    color: white;
+    background: var(--white);
+    color: black;
     border: 2px solid var(--white);
-    padding: 10px 50px;
+    padding: 12px 40px;
+    font-size: var(--font-size-m);
+    border: 1px solid var(--transparent);
+    transition: 0.20s all ease;
+    border-radius: var(--border-radius-s);
+    z-index: 10;
+
+}
+
+#btn:hover {
+   
+    background: rgba(255, 174, 0, 0.918);
+    color: var(--black);
+    border: 1px solid var(--white);
+   
 }
 
 
 #content {
-    margin: auto;
-    padding: 4vh;
+    padding: 50px;
     font-size: var(--font-size-m);
-    max-width: 700px;
-    margin-top: 20px;
+    background: #ffffffd3;
+    margin-top: 60px;
+    color: var(--black);
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--border-radius-s);
+    z-index: 10;
 }
 
 /* IMAGES */
@@ -128,7 +160,21 @@ img {
     width: 100%;
 }
 
+#sound {
+    width: 40px;
+    margin: 10px auto;
+    cursor: pointer;
+    padding-top: 50px;
+    z-index: 10;
+}
 
+
+.emoji {
+    width: 40px;
+    animation: 8s bounce ease-in-out infinite alternate;
+    position: absolute;
+  
+}
 
 
 /* LINKS */
@@ -141,34 +187,68 @@ button {
     cursor: pointer;
 }
 
+/* ANIMATION */
 
+@keyframes bounce {
+  0% {
+    bottom: 10vh;
+    left: 0;
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  
+    25% {
+    bottom: 90vh;
+    left: 50%;
+    transform: rotateX(180deg) rotateY(0) rotateZ(0);
+  }
+  
+    75% {
+    bottom: 10vh;
+    left: 75%;
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
 
-
+  }
+  
+    100% {
+    bottom: 10vh;
+    left: 0;
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(0);
+  }
+  
+  
+  
+}
 
 
 /* RESPONSIVE */
-
-/* (DESKTOP)RESPONSIVE ABOVE 1024PX  */
-
-@media screen and (min-width: 1024px) {
-
-
-}
-
-/* (TABLET) RESPONSIVE BETWEEN 769 - 1023PX */
-
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-
-
-}
-
-
        
 /* (MOBILE) RESPONSIVE BELOW FOR MAX WIDTH 768PX */
 
 @media screen and (max-width: 768px) {
 
+    h1 {
+    margin: auto;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
 
+#content {
+    padding: 30px;
+    font-size: var(--font-size-n);
+    margin-top: 40px;
+    width: 90%;
+}
+
+#btn {
+    margin-top: 30px;
+    font-size: var(--font-size-n);
+ 
+}
+
+
+.emoji {
+    width: 30px;
+}
 
 }
 
